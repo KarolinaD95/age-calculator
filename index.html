@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="futureage.css">
+        <script type="text/javascript" src="futureage.js" defer></script> 
+        <!-- type="module" will make sure that the file is rendered only after all modules are available -->
+    <title>Future Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter"><h4>Calculate Your Future Age</h4></div>
+                <div class="block">
+                    <p class="title">Year of Birth</p>
+                    <input 
+                        type="text"
+                        name="date"
+                        id="yearBirth"
+                        placeholder="YYYY"
+                        minlength="4"
+                        maxlength="4"
+                        required="required"
+                    />
+                </div>
+                <div class="block">
+                    <p class="title">Future Year</p>
+                    <input 
+                        type="text"
+                        name="date"
+                        id="yearFuture"
+                        placeholder="YYYY"
+                        minlength="4"
+                        maxlength="4"
+                        required="required"
+                    />
+                </div>
+                </div>
+                <div class="base">
+                    <div class="enter">
+                        <input
+                            type="button"
+                            name="calculate"
+                            id="calculate"
+                            value="Calculate"
+                            onclick="calculateAge()"
+                        />
+                    </div>
+                </div>
+                <div id="age"></div>
+        </form>
+    </div>
+</body>
+</html>
